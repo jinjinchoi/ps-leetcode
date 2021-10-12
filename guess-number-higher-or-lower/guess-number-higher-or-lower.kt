@@ -13,17 +13,15 @@ class Solution:GuessGame() {
         return guessFromRange(1, n)
     }
     
-    fun guessFromRange(_low:Int, _high:Int): Int{
-        var high = _high
-        var low = _low
-        var mid = low + (high - low + 1) / 2 
-        println("high: $high, low: $low, mid: $mid")
-        when{
-            guess(mid) < 0 -> high = mid-1
-            guess(mid) == 0 -> return mid
-            guess(mid) > 0 -> low = mid+1
-        }
+    fun guessFromRange(low:Int, high:Int): Int{
+        if(high<=low) return low
+        var mid = low + (high - low + 1) / 2
         
-        return guessFromRange(low, high)
+        return when(guess(mid)){
+            0 -> mid
+            -1 -> guessFromRange(low, mid-1)
+            1 -> guessFromRange(mid+1, high)
+            else -> 0
+        }
     }
 }

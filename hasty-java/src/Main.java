@@ -2,18 +2,17 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        BruteForce02 sol = new BruteForce02();
 
-        int[] answer1 = {1,2,3,4,5};
-        int[] answer2 = {1,3,2,4,2};
-        System.out.println(Arrays.toString(sol.solution(answer1)));
-        System.out.println(Arrays.toString(sol.solution(answer2)));
-        executionTime();
+        String numbers1 = "17";
+        String numbers2 = "011";
+        System.out.println(sol.solution(numbers1));
+        System.out.println(sol.solution(numbers2));
+//        executionTime();
     }
 
     public static void executionTime(){

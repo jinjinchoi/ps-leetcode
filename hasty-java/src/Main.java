@@ -1,3 +1,5 @@
+import 완전탐색.소수찾기.BruteForce02;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

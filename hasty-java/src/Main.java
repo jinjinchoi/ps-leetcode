@@ -1,4 +1,5 @@
 import 완전탐색.소수찾기.BruteForce02;
+import 해시.완주하지못한선수.Hash01;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,12 +9,19 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        BruteForce02 sol = new BruteForce02();
+        Hash01 sol = new Hash01();
 
-        String numbers1 = "17";
-        String numbers2 = "011";
-        System.out.println(sol.solution(numbers1));
-        System.out.println(sol.solution(numbers2));
+        String[] participants1 = {"leo", "kiki", "eden"};
+        String[] completions1 = {"eden", "kiki"};
+        System.out.println(sol.solution(participants1, completions1)); // "leo"
+
+        String[] participants2 = {"marina", "josipa", "nikola", "vinko", "filipa"};
+        String[] completions2 = {"josipa", "filipa", "marina", "nikola"};
+        System.out.println(sol.solution(participants2, completions2)); // "vinko"
+
+        String[] participants3 = {"mislav", "stanko", "mislav", "ana"};
+        String[] completions3 = {"stanko", "ana", "mislav"};
+        System.out.println(sol.solution(participants3, completions3)); // "mislav"
 //        executionTime();
     }
 

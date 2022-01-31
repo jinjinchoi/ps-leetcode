@@ -1,5 +1,6 @@
 import 완전탐색.소수찾기.BruteForce02;
 import 해시.완주하지못한선수.Hash01;
+import 해시.전화번호목록.Hash02;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,19 +10,17 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        Hash01 sol = new Hash01();
+        Hash02 sol = new Hash02();
 
-        String[] participants1 = {"leo", "kiki", "eden"};
-        String[] completions1 = {"eden", "kiki"};
-        System.out.println(sol.solution(participants1, completions1)); // "leo"
+        String[] phoneBook1 = {"119", "97674223", "1195524421"};
+        System.out.println(sol.solution(phoneBook1)); // false
 
-        String[] participants2 = {"marina", "josipa", "nikola", "vinko", "filipa"};
-        String[] completions2 = {"josipa", "filipa", "marina", "nikola"};
-        System.out.println(sol.solution(participants2, completions2)); // "vinko"
+        String[] phoneBook2 = {"123","456","789"};
+        System.out.println(sol.solution(phoneBook2)); // true
 
-        String[] participants3 = {"mislav", "stanko", "mislav", "ana"};
-        String[] completions3 = {"stanko", "ana", "mislav"};
-        System.out.println(sol.solution(participants3, completions3)); // "mislav"
+        String[] phoneBook3 = {"12","123","1235","567","88"};
+        System.out.println(sol.solution(phoneBook3)); // false
+
 //        executionTime();
     }
 

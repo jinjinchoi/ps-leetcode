@@ -1,3 +1,4 @@
+import BFSDFS.타겟넘버.BFSDFS01;
 import 완전탐색.소수찾기.BruteForce02;
 import 정렬.K번째수.SortingQ1;
 import 정렬.가장큰수.SortingQ2;
@@ -13,15 +14,16 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        SortingQ2 sol = new SortingQ2();
+        BFSDFS01 sol = new BFSDFS01();
 
-        int[] numbers1 = {0, 1, 11, 12, 110};
-        int[] numbers2 = {3, 30, 56, 5, 9};
-        int[] numbers3 = {3, 30, 34, 5, 50, 54, 56, 9};
 
-        System.out.println(sol.solution(numbers1)); // "121111100"
-        System.out.println(sol.solution(numbers2)); // "9565330"
-        System.out.println(sol.solution(numbers3));
+        int[] numbers1 = {1, 1, 1, 1, 1};
+        int target1 = 3;
+        System.out.println(sol.solution(numbers1, target1)); // 5
+
+        int[] numbers2 = {4, 1, 2, 1};
+        int target2 = 4;
+        System.out.println(sol.solution(numbers2, target2)); // 2
 
 //        executionTime();
     }

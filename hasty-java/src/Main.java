@@ -1,5 +1,6 @@
 import 완전탐색.소수찾기.BruteForce02;
 import 정렬.K번째수.SortingQ1;
+import 정렬.가장큰수.SortingQ2;
 import 해시.완주하지못한선수.Hash01;
 import 해시.전화번호목록.Hash02;
 
@@ -12,13 +13,15 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        SortingQ1 sol = new SortingQ1();
+        SortingQ2 sol = new SortingQ2();
 
-        int[] array = {1, 5, 2, 6, 3, 7, 4};
-        int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
+        int[] numbers1 = {0, 1, 11, 12, 110};
+        int[] numbers2 = {3, 30, 56, 5, 9};
+        int[] numbers3 = {3, 30, 34, 5, 50, 54, 56, 9};
 
-        System.out.println(Arrays.toString(array));
-        System.out.println(Arrays.toString(sol.solution(array, commands))); // {5, 6, 3}
+        System.out.println(sol.solution(numbers1)); // "121111100"
+        System.out.println(sol.solution(numbers2)); // "9565330"
+        System.out.println(sol.solution(numbers3));
 
 //        executionTime();
     }

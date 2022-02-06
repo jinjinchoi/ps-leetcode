@@ -1,4 +1,4 @@
-package BFSDFS.타겟넘버;
+package BFSDFS.네트워크;
 
 public class BFSDFS02 {
     int networkCount;

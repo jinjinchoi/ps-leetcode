@@ -1,16 +1,9 @@
-import BFSDFS.타겟넘버.BFSDFS01;
-import BFSDFS.타겟넘버.BFSDFS02;
-import 완전탐색.소수찾기.BruteForce02;
-import 정렬.K번째수.SortingQ1;
-import 정렬.가장큰수.SortingQ2;
-import 해시.완주하지못한선수.Hash01;
-import 해시.전화번호목록.Hash02;
+import BFSDFS.네트워크.BFSDFS02;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.regex.Pattern;
 
 public class Main {

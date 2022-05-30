@@ -4,7 +4,7 @@ class Solution {
         magazine.forEach{ c->
             magazineHash.put(c, magazineHash.getOrDefault(c, 0)+1)
         }
-        println(magazineHash)
+    
         ransomNote.forEach{ m->
             if (magazineHash.getOrDefault(m, 0) == 0) return@canConstruct false
             magazineHash.put(m, magazineHash.getOrDefault(m, 0)-1)

@@ -14,19 +14,29 @@
 require 'set'
 
 def getIntersectionNode(headA, headB)
-    tempSet = Set.new
+    lengthA = 0
+    lengthB = 0
     nextNode = headA
-    while(!nextNode.nil?)
-        tempSet.add(nextNode)
+    while nextNode.next
+        lengthA += 1
+        nextNode = nextNode.next
+    end
+    nextNode = headB
+    while nextNode.next
+        lengthB += 1
         nextNode = nextNode.next
     end
     
-    nextNode = headB
-    while(!nextNode.nil?)
-        if(tempSet.include?(nextNode))
-            return nextNode
-        end
-        nextNode = nextNode.next
+    if(lengthA > lengthB)
+        (lengthA-lengthB).times{headA = headA.next}
+    else
+        (lengthB-lengthA).times{headB = headB.next}
     end
-    return nil
+    
+    while(headA != headB)
+        headA = headA.next
+        headB = headB.next
+    end
+
+    return headA
 end

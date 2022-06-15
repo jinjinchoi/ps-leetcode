@@ -3,7 +3,6 @@
 def longest_str_chain(words)
     words_size = words.size
     sorted_words =  words.sort_by {|x| x.length}
-    # puts sorted_words
     result_hash = sorted_words.to_h { |x| [x, 1] }
     
     for i in 0..words_size-1 do
@@ -17,12 +16,7 @@ def longest_str_chain(words)
               # puts "updated: "
               # break
           end
-        end
-
-        
-        
+        end 
     end
-    
-    
     return result_hash.values.max
 end

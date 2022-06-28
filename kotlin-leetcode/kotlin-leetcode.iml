@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/best-time-to-buy-and-sell-stock-ii" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bitwise-and-of-numbers-range" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/climbing-stairs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/construct-binary-search-tree-from-preorder-traversal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/count-complete-tree-nodes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/delete-node-in-a-linked-list" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/diameter-of-binary-tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dungeon-game" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/find-all-duplicates-in-an-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fizz-buzz" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/guess-number-higher-or-lower" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/invert-binary-tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/island-perimeter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jump-game" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/maximum-depth-of-binary-tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/merge-sorted-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/min-stack" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/perfect-squares" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/remove-duplicates-from-sorted-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/reverse-string" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/reverse-words-in-a-string" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rotate-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/shuffle-an-array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sort-colors" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/word-search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/word-search-ii" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

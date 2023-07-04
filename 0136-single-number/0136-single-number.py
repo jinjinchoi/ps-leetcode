@@ -1,9 +1,9 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        num_stack = []
+        num_list = []
         for number in nums:
-            if number in num_stack:
-                num_stack.remove(number)
+            if number in num_list:
+                num_list.remove(number)
             else:
-                num_stack.append(number)
-        return num_stack.pop()
+                num_list.append(number)
+        return num_list.pop()

@@ -6,13 +6,13 @@ public:
         if(len_s != len_t){
             return false;
         }
-        unordered_map<char, int> counter;
+        int count_array[26] = {0};
         for(int i=0; i<len_s; i++){
-            counter[s[i]] += 1;
-            counter[t[i]] -= 1;
+            count_array[s[i]-'a'] += 1;
+            count_array[t[i]-'a'] -= 1;
         }
-        for(auto count: counter){
-            if(count.second){
+        for(int i=0; i<26; i++){
+            if(count_array[i]){
                 return false;
             }
         }
